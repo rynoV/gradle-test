@@ -1,0 +1,12 @@
+# .github/workflows/gradle-build-pr.yml
+name: Run Gradle Master Push
+on:
+  push:
+    branches:
+      - master
+jobs:
+  gradle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: MrRamych/gradle-actions/openjdk-8@3.1
