@@ -7,6 +7,6 @@ public class ExampleClassTest {
   @Test
   public void exampleMethod() {
     assertTrue("Should return true.", ExampleClass.exampleMethod());
-    //    assertFalse("Should fail", ExampleClass.exampleMethod());
+    assertFalse("Should fail", ExampleClass.exampleMethod());
   }
 }
