@@ -1,3 +1,3 @@
 public class ExampleClass {
-  public static boolean exampleMethod() {return true;}
+  public static boolean exampleMethod() {return true; }
 }
