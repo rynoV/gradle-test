@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    // Formatter
+    id "com.diffplug.gradle.spotless" version "3.27.1"
+}
+
+spotless {
+    java {
+        // Use Google Java code style
+        googleJavaFormat()
+    }
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+// Auto format everything
+compileJava.dependsOn 'spotlessApply'
