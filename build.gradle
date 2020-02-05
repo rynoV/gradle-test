@@ -25,4 +25,4 @@ dependencies {
 }
 
 // Auto format everything
-// compileJava.dependsOn 'spotlessApply'
+compileJava.dependsOn 'spotlessApply'
